@@ -1,3 +1,6 @@
+html {
+    background-color: teal;
+}
 body{
     color: #333333;
     font-family: arial;
@@ -15,8 +18,12 @@ body{
     flex-grow: 1; 
 }
 
+p{
+    color: #cccccc;
+}
+
 footer {
-    color: #888888;
+    color: white;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
@@ -25,6 +32,7 @@ footer {
 header {
     margin-top: 16px;
     margin-bottom: 48px;
+    border-bottom: 1px solid #cccccc;
 }
 
 h1 {
@@ -33,7 +41,7 @@ h1 {
 }
 
 header a {
-    color: #888888;
+    color: white;
     margin-right : 16px;
     text-decoration: none; 
 }
@@ -45,6 +53,7 @@ header a {
 input {
     border: 1px solid #cccccc;
     padding: 8px;
+    border-radius: 3px;
 }
 
 button {
@@ -53,4 +62,10 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #57b2b2;
 }

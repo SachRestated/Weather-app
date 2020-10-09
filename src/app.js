@@ -23,25 +23,11 @@ app.use(express.static(dirPath))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title : 'Weather app',
+        title : 'Weather App',
         name: 'Sachin Vashisht'
     })
 });
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        message: 'Example Message',
-        title: 'Help',
-        name: 'Sachin Vashisht'
-    })
-});
-
-app.get('/about', (req, res) => {
-    res.render('about', {
-        title: 'About Me',
-        name: 'Sachin Vashisht'
-    });
-});
 
 app.get('/weather', (req, res) => {
     // console.log(req.query.address);
@@ -80,15 +66,6 @@ app.get('/weather', (req, res) => {
     // });
 });
 
-
-
-app.get('/help/*', (req, res) => {
-    res.render('404', {
-        title: '404',
-        name: 'Sachin Vashisht',
-        errorMessage : 'Help article not found'
-    })    
-})
 
 app.get('*', (req, res) => {
     res.render('404', {
