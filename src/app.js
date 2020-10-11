@@ -66,13 +66,26 @@ app.get('/weather', (req, res) => {
     // });
 });
 
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'About', 
+        name: 'Sachin Vashisht'
+    })
+});
+
+app.get('help', (req, res)=> {
+    res.render('help', {
+        title: 'Help',
+        name: 'Sachin Vashisht' 
+    })
+})
 
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         name: 'Sachin Vashisht',
         errorMessage: 'Page not found'
-    })
+    })  
 })
 
 

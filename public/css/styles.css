@@ -19,6 +19,7 @@ body{
 }
 
 p{
+    font-size: 1.2rem;
     color: #cccccc;
 }
 
@@ -32,7 +33,7 @@ footer {
 header {
     margin-top: 16px;
     margin-bottom: 48px;
-    border-bottom: 1px solid #cccccc;
+    /* border-bottom: 1px solid #cccccc; */
 }
 
 h1 {
@@ -43,7 +44,9 @@ h1 {
 header a {
     color: white;
     margin-right : 16px;
-    text-decoration: none; 
+    text-decoration: none;
+    font-size: 1.2rem; 
+    /* border-bottom: 1px solid #cccccc; */
 }
 
 .portrait{
@@ -52,8 +55,9 @@ header a {
 
 input {
     border: 1px solid #cccccc;
-    padding: 8px;
+    padding: 10px;
     border-radius: 3px;
+
 }
 
 button {
@@ -61,7 +65,7 @@ button {
     border: 1px solid #888888;
     background: #888888;
     color: white;
-    padding: 8px;
+    padding: 10px;
     margin: 4px;
     border-radius: 3px;
 }
