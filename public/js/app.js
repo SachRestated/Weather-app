@@ -19,8 +19,8 @@ weatherForm.addEventListener('submit', (evt)=> {
                     msg1.textContent = data.error
                 } else {
                     console.log(data)
-                    const {region, country, temperature, feelslike, weather_descriptions: w} = data.forecast
-                    const text = `${w[0]}. It is currently ${temperature} degrees out there. Feels like ${feelslike} degrees.`
+                    const {region, country, temperature, feelslike, weather_descriptions: w, humidity} = data.forecast
+                    const text = `${w[0]}. It is currently ${temperature} degrees out there. Feels like ${feelslike} degrees. The humidity is ${humidity}%`
                     msg1.textContent = `${data.location}, ${region}, ${country}`
                     msg2.textContent = text
                 }
